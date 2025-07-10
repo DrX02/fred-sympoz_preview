@@ -1,0 +1,420 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #1e3d59;
+}
+
+/* Style de la barre de navigation */
+
+/* Base navbar transparente */
+#mainNavbar {
+  background-color: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  padding: 15px 0;
+  z-index: 999;
+}
+
+#mainNavbar.nav-scrolled {
+  background-color: #51aafc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+}
+
+
+.navbar {
+  background-color: #51aafc;
+  transition: background-color 0.3s ease;
+
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link {
+  position: relative;
+  margin-left: 1rem;
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #d4af37;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #f9f9f9 !important;
+}
+
+/* End of navbar styles */
+
+/* Hero Section Styles */
+#heroCarousel {
+  position: relative;
+}
+
+.hero-slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+}
+
+#heroCarousel .carousel-control-prev,
+#heroCarousel .carousel-control-next {
+  width: 8%;
+}
+
+#heroCarousel .carousel-control-prev-icon,
+#heroCarousel .carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 15px;
+  bottom: 20px;
+
+}
+
+/* End of Hero Section Styles */
+
+/* About Section Styles */
+.about-section {
+  background-color: #f8f9fa;
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-section .section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1e3d59;
+  position: relative;
+}
+
+.about-section .section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d4af37;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-section svg {
+  z-index: 0;
+}
+
+
+
+.dot-pattern {
+  opacity: 0.5;
+  z-index: 0;
+}
+
+
+.image-fred-section {
+  background-image: url('../img/img.jpg');
+  /* background-attachment: fixed; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  /* Garde la forme paysage sur tous les écrans */
+  position: relative;
+  z-index: 1;
+}
+
+.image-fred-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.086);
+  /* Optionnel : filtre foncé */
+  z-index: 2;
+}
+
+/* .about-section .image-fred-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+} */
+/* End of About Section Styles */
+
+
+/* Pôles d’activité Section Styles */
+.section-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #1e3d59;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d4af37;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+.pole-card {
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pole-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pole-card .icon-box {
+  color: #1e3d59;
+  background-color: #eaf3ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.pole-card:hover .icon-box {
+  background-color: #51aafc;
+  color: white;
+}
+
+.pole-card h4 {
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* End of Pôles d’activité Section Styles */
+
+/* Realisations Section Styles */
+.realisations .realisation-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.realisations .realisation-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+}
+
+.realisations .realisation-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #d4af37;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+/* .realisations {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+} */
+/* End of Realisations Section Styles */
+
+/* Formation Menuiserie Section Styles */
+.formation-menuiserie .section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e3d59;
+}
+
+.formation-menuiserie ul li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.formation-menuiserie .btn-primary {
+  background-color: #ff6600;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.formation-menuiserie .btn-primary:hover {
+  background-color: #e65c00;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* .img-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+} */
+/* End of Formation Menuiserie Section Styles */
+
+/* Testimonial Section Styles */
+
+.testimonial {
+  background-color: #f1f1f1;
+}
+
+.testimonial .blockquote {
+  font-size: 1.1rem;
+  color: #333;
+  font-style: italic;
+}
+
+.testimonial .blockquote-footer {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 50% 50%;
+}
+
+/* .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%231e3d59' d='M11.354 1.646a.5.5 0 0 1 .146.354v12a.5.5 0 0 1-.854.353l-6-6a.5.5 0 0 1 0-.706l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+} */
+/* End of Testimonial Section Styles */
+
+/* Call to Action Section Styles */
+.cta {
+  background: linear-gradient(135deg, #f7c94b, #d4af37);
+  color: #1e3d59;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.cta p {
+  font-size: 1.2rem;
+}
+
+.btn-cta {
+  background-color: #1e3d59;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 61, 89, 0.2);
+}
+
+.btn-cta:hover {
+  background-color: #143049;
+  transform: scale(1.05);
+}
+
+/* End of Call to Action Section Styles */
+
+
+/* Footer Styles */
+.footer {
+  background-color: #1e3d59;
+  color: #ffffff;
+}
+
+.footer h5,
+.footer h6 {
+  color: #f7c94b;
+}
+
+.footer-link {
+  color: #cccccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
+.footer-icon {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #f7c94b;
+  transform: scale(1.1);
+}
+
+/* End of Footer Styles */

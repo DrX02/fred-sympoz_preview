@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fred Sympoz - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Fred Sympoz</a>
+            <button class="navbar-toggler" title="Menu" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fred">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#temoigna">Mindset</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+
+    <!-- Hero Section avec Carousel -->
+    <section id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('assets/img/h1.jpg');">
+                    <div class="overlay d-flex align-items-center justify-content-center text-center">
+                        <div class="text-white animate__animated animate__fadeInDown">
+                            <h1 class="display-4 fw-bold">Un homme, trois passions</h1>
+                            <p class="lead mt-3">Menuiserie, Imprimerie, Développement Personnel</p>
+                            <a href="#services" class="btn btn-warning btn-lg text-dark mt-4">Explorer l'univers
+                                Sympoz</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('assets/img/h2.jpg');">
+                    <div class="overlay d-flex align-items-center justify-content-center text-center">
+                        <div class="text-white animate__animated animate__fadeInDown">
+                            <h1 class="display-4 fw-bold">Un artisan inspirant</h1>
+                            <p class="lead mt-3">Fred Sympoz allie talent, vision et action</p>
+                            <a href="#services" class="btn btn-warning btn-lg text-dark mt-4">Voir ses réalisations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('assets/img/h3.jpg');">
+                    <div class="overlay d-flex align-items-center justify-content-center text-center">
+                        <div class="text-white animate__animated animate__fadeInDown">
+                            <h1 class="display-4 fw-bold">L’univers Fred Sympoz</h1>
+                            <p class="lead mt-3">Une plateforme de savoir-faire et de motivation</p>
+                            <a href="#services" class="btn btn-warning btn-lg text-dark mt-4">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Contrôles -->
+        <button title="prev" class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button title="next" class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </section>
+    <!-- End of Hero Section -->
+
+    <!-- À propos de Fred Sympoz -->
+
+    <section class="about-section position-relative py-5 bg-light overflow-hidden">
+        <!-- SVG pointillé en haut à gauche -->
+        <svg class="position-absolute top-0 start-0 dot-pattern" width="150" height="150" viewBox="0 0 100 100">
+            <defs>
+                <pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <circle cx="5" cy="5" r="1" fill="#d4af37" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots)" />
+        </svg>
+
+        <div class="container text-center position-relative">
+            <h2 class="section-title mb-4">À propos de Fred Sympoz</h2>
+            <p class="lead col-lg-8 mx-auto text-muted">
+                Entrepreneur aux multiples talents, <strong>Fred Sympoz</strong> incarne la rigueur, la créativité et
+                l’impact. À la tête de trois pôles complémentaires — menuiserie, imprimerie et développement personnel —
+                il met ses compétences au service de la transformation concrète de son environnement.
+            </p>
+            <p class="mt-3 col-lg-8 mx-auto text-muted">
+                Il forme, équipe et motive les jeunes entrepreneurs du Bénin et d'ailleurs, à travers ses coachings, ses
+                créations sur mesure et ses contenus inspirants. Fred Sympoz ne se limite pas à entreprendre : il
+                transmet une vision, un état d’esprit, un mindset de bâtisseur.
+            </p>
+        </div>
+
+        <!-- SVG pointillé en bas à droite -->
+        <svg class="position-absolute bottom-0 end-0 dot-pattern" width="150" height="150" viewBox="0 0 100 100">
+            <defs>
+                <pattern id="dots-blue" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <circle cx="5" cy="5" r="1" fill="#51aafc" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots-blue)" />
+        </svg>
+    </section>
+
+    <!-- Section image Fred en arrière-plan fixe -->
+    <section class="image-fred-section">
+        <div class="overlay"></div>
+    </section>
+    <!-- End of Section image Fred en arrière-plan fixe -->
+
+    <!-- End of À propos de Fred Sympoz -->
+
+
+    <!-- Pôles d’activité -->
+    <section class="poles py-5" id="services">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Les Pôles d’Activité</h2>
+            <div class="row g-4">
+
+                <!-- Menuiserie -->
+                <div class="col-md-4">
+                    <div class="card pole-card text-center h-100 p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-couch fa-2x"></i>
+                        </div>
+                        <h4 class="gold mb-2">Menuiserie Fred Sympoz</h4>
+                        <p>Création de meubles sur mesure, agencement, design et décoration.</p>
+                    </div>
+                </div>
+
+                <!-- Imprimerie -->
+                <div class="col-md-4">
+                    <div class="card pole-card text-center h-100 p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-print fa-2x"></i>
+                        </div>
+                        <h4 class="gold mb-2">Imprimerie Fred Sympoz</h4>
+                        <p>Produits personnalisés, design graphique, packaging et support pro.</p>
+                    </div>
+                </div>
+
+                <!-- Mindset -->
+                <div class="col-md-4">
+                    <div class="card pole-card text-center h-100 p-4">
+                        <div class="icon-box mb-3">
+                            <i class="fas fa-brain fa-2x"></i>
+                        </div>
+                        <h4 class="gold mb-2">Le Mindset de Fred Sympoz</h4>
+                        <p>Coaching, conférences, contenus motivants et accompagnement personnel.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Pôles d’activité -->
+
+    <!-- Réalisations -->
+    <section class="realisations py-5 bg-white" id="realisations">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Quelques Réalisations</h2>
+            <div class="col-12 text-center mb-5">
+                <p class="text-muted">Découvrez une sélection de nos réalisations les plus marquantes. Cliquez sur
+                    "Voir plus" pour explorer davantage.</p>
+            </div>
+            <!-- Conteneur pour les images visibles -->
+            <div class="row g-4" id="realizations-visible">
+
+
+
+            </div>
+
+            <!-- Conteneur pour les images cachées -->
+            <div class="collapse mt-2" id="moreRealizations">
+                <div class="row g-4" id="realizations-hidden">
+                    <!-- Image 5 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/5.jpg" alt="Réalisation 5">
+                        </div>
+                    </div>
+                    <!-- Image 6 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/6.jpg" alt="Réalisation 6">
+                        </div>
+                    </div>
+                    <!-- Image 7 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/7.jpg" alt="Réalisation 7">
+                        </div>
+                    </div>
+                    <!-- Image 8 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/8.jpg" alt="Réalisation 8">
+                        </div>
+                    </div>
+                    <!-- Image 9 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/9.jpg" alt="Réalisation 9">
+                        </div>
+                    </div>
+                    <!-- Image 10 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/10.jpg" alt="Réalisation 10">
+                        </div>
+                    </div>
+                    <!-- Image 11 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/11.jpg" alt="Réalisation 11">
+                        </div>
+                    </div>
+                    <!-- Image 12 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/12.jpg" alt="Réalisation 12">
+                        </div>
+                    </div>
+                    <!-- Image 13 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/13.jpg" alt="Réalisation 13">
+                        </div>
+                    </div>
+                    <!-- Image 14 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/14.jpg" alt="Réalisation 14">
+                        </div>
+                    </div>
+                    <!-- Image 15 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/15.jpg" alt="Réalisation 15">
+                        </div>
+                    </div>
+                    <!-- Image 16 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/16.jpg" alt="Réalisation 16">
+                        </div>
+                    </div>
+                    <!-- Image 17 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/17.jpg" alt="Réalisation 17">
+                        </div>
+                    </div>
+                    <!-- Image 18 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/18.jpg" alt="Réalisation 18">
+                        </div>
+                    </div>
+                    <!-- Image 19 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/19.jpg" alt="Réalisation 19">
+                        </div>
+                    </div>
+                    <!-- Image 20 -->
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="realisation-item">
+                            <img src="assets/img/real/20.jpg" alt="Réalisation 20">
+                        </div>
+                    </div>
+                    <!-- Ajoute d'autres images ici si besoin -->
+                </div>
+            </div>
+
+
+            <!-- Bouton Voir plus -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#moreRealizations" aria-expanded="false" aria-controls="moreRealizations"
+                    id="toggleBtn">
+                    Voir plus
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Réalisations -->
+
+
+    <!-- Section Formation Menuiserie -->
+    <section class="formation-menuiserie py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <!-- Image -->
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <img src="assets/img/form.jpg" alt="Formation Menuiserie Fred Sympoz"
+                            class="img-fluid rounded shadow">
+                    </div>
+                </div>
+
+                <!-- Contenu -->
+                <div class="col-md-6">
+                    <h2 class="section-title mb-3">Formation Accélérée en Menuiserie</h2>
+                    <p class="lead text-muted">Une formation <strong>100% pratique</strong> pour maîtriser les
+                        techniques de menuiserie moderne.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li><strong>Durée :</strong> 3 Mois</li>
+                        <li><strong>Horaires :</strong> Jeudi : 19h à 21h &nbsp; | &nbsp; Samedi : 09h à 16h</li>
+                        <li><strong>Coût :</strong> 299 000 F</li>
+                    </ul>
+                    <a href="https://wa.me/22957071402" target="_blank" class="btn btn-primary mt-4">
+                        S’inscrire via WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End of Section Formation Menuiserie -->
+
+    <!-- Témoignages -->
+    <section class="testimonial text-center py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title mb-4">Ce que disent ses clients</h2>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Témoignage 1 -->
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote">
+                            <p class="mb-4">"Grâce à Fred, j'ai non seulement aménagé mon salon avec goût, mais j’ai
+                                aussi trouvé une vraie source de motivation dans mon parcours de vie."</p>
+                            <footer class="blockquote-footer">Christelle A.</footer>
+                        </blockquote>
+                    </div>
+
+                    <!-- Témoignage 2 -->
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p class="mb-4">"Un service impeccable. Les meubles réalisés pour mon bureau ont dépassé
+                                toutes mes attentes. Je recommande vivement !"</p>
+                            <footer class="blockquote-footer">David K.</footer>
+                        </blockquote>
+                    </div>
+
+                    <!-- Témoignage 3 -->
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p class="mb-4">"Fred Sympoz est une vraie source d'inspiration. Son coaching m’a permis de
+                                lancer mon propre atelier avec confiance."</p>
+                            <footer class="blockquote-footer">Mireille T.</footer>
+                        </blockquote>
+                    </div>
+
+                </div>
+
+                <!-- Contrôles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Témoignages -->
+
+    <!-- Call to Action -->
+    <section class="cta text-center">
+        <div class="container py-5">
+            <h2 class="mb-4 fw-bold">Vous souhaitez collaborer avec Fred Sympoz ?</h2>
+            <p class="lead mb-4">Faites le premier pas vers une collaboration enrichissante et pleine de valeur.</p>
+            <a href="#contact" class="btn btn-cta">Contactez-le dès maintenant</a>
+        </div>
+    </section>
+    <!-- End of Call to Action  -->
+
+    <!-- Footer -->
+    <footer class="footer text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- Colonne 1 : Branding -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold text-uppercase">Fred Sympoz</h5>
+                    <p>Entrepreneur passionné, Fred vous accompagne dans vos projets de vie, de design et de
+                        développement personnel.</p>
+                </div>
+
+                <!-- Colonne 2 : Liens rapides -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#accueil" class="footer-link">Accueil</a></li>
+                        <li><a href="#services" class="footer-link">Services</a></li>
+                        <li><a href="#realisations" class="footer-link">Réalisations</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Contact & réseaux -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="fw-bold">Contact</h6>
+                    <p>Email : <a href="mailto:contact@fredsympoz.bj" class="footer-link">contact@fredsympoz.bj</a></p>
+                    <p>Tel : <a href="tel:+22957071402" class="footer-link">+229 57 07 14 02</a></p>
+                    <div class="social-icons mt-2">
+                        <a href="#" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="bg-white opacity-25">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 <strong>Fred Sympoz</strong>. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
